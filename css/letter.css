@@ -105,3 +105,36 @@ body{
     transition:.4s;
 }
 
+@media screen and (max-width:900px) and (orientation:landscape){
+
+    #text{
+
+        top:28.8%;
+
+        left:51.5%;
+
+        width:43%;
+
+        height:49%;
+
+        font-size:1.45vw;
+
+        line-height:1.45;
+
+    }
+
+    #backBtn{
+
+        width:55%;
+
+        max-width:300px;
+
+        font-size:18px;
+
+        padding:14px 20px;
+
+        bottom:4%;
+
+    }
+
+}

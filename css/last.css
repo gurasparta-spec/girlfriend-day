@@ -87,3 +87,21 @@ body{
     background:#ff2f76;
 
 }
+
+@media screen and (max-width:900px) and (orientation:landscape){
+
+#openBtn{
+
+    width:60%;
+
+    max-width:320px;
+
+    padding:16px 20px;
+
+    font-size:20px;
+
+    bottom:5%;
+
+}
+
+}

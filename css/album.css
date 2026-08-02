@@ -122,3 +122,62 @@ body{
     }
 
 }
+
+@media screen and (max-width:900px) and (orientation:landscape){
+
+.album{
+
+    gap:18px;
+
+    padding:18px;
+
+}
+
+.content{
+
+    width:58vw;
+
+    max-width:none;
+
+    padding:18px;
+
+    border-radius:22px;
+
+}
+
+#photo{
+
+    height:72vh;
+
+}
+
+#compliment{
+
+    font-size:22px;
+
+    margin-top:18px;
+
+    min-height:55px;
+
+}
+
+#prev,
+#next{
+
+    width:58px;
+
+    height:58px;
+
+    font-size:28px;
+
+}
+
+#continue{
+
+    font-size:18px;
+
+    padding:14px 28px;
+
+}
+
+}
