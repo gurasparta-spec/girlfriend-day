@@ -351,68 +351,81 @@ transform:translate(-50%,0);
 @media screen and (max-width: 900px) and (orientation: landscape){
 
 body{
-
     overflow:hidden;
+}
 
+.background{
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
 }
 
 .album,
 .music,
 .letter{
 
-    width:26%;
+    width:29vw;
+    height:56vh;
 
-    height:48%;
+    top:21vh;
 
-    top:30%;
-
-    border-radius:22px;
-
+    border-radius:26px;
 }
 
 .album{
-
-    left:4%;
-
+    left:2vw;
 }
 
 .music{
-
-    left:37%;
-
+    left:35.5vw;
 }
 
 .letter{
+    right:2vw;
+}
 
-    right:4%;
-
+.album img,
+.music img,
+.letter img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 .check{
 
-    width:28px;
-    height:28px;
-    font-size:18px;
+    width:32px;
+    height:32px;
 
+    font-size:20px;
+
+    top:10px;
+    right:10px;
 }
 
 #finalContainer{
 
-    bottom:20px;
+    width:100%;
 
+    left:50%;
+
+    bottom:12px;
+
+    transform:translateX(-50%);
 }
 
 #finalContainer h2{
 
-    font-size:24px;
+    font-size:28px;
 
+    margin-bottom:14px;
 }
 
 #finalBtn{
 
-    font-size:18px;
-    padding:14px 30px;
+    padding:16px 36px;
 
+    font-size:20px;
 }
 
 }
