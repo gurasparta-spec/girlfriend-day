@@ -124,11 +124,11 @@ body{
 
         width:32%;
 
-        height:56%;
+        height:62%;
 
         color:#4a3527;
 
-        font-size:clamp(10px,1vw,14px);
+        font-size:clamp(9px,0.9vw,13px);
 
         line-height:1.45;
 
