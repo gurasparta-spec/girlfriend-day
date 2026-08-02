@@ -2,44 +2,36 @@ const albumDone = localStorage.getItem("albumDone");
 const musicDone = localStorage.getItem("musicDone");
 const letterDone = localStorage.getItem("letterDone");
 
-if(albumDone){
-    document.getElementById("albumCheck").style.display="flex";
+if (albumDone) {
+    document.getElementById("albumCheck").style.display = "flex";
 }
 
-if(musicDone){
-    document.getElementById("musicCheck").style.display="flex";
+if (musicDone) {
+    document.getElementById("musicCheck").style.display = "flex";
 }
 
-if(letterDone){
-    document.getElementById("letterCheck").style.display="flex";
+if (letterDone) {
+    document.getElementById("letterCheck").style.display = "flex";
 }
 
-if(albumDone && musicDone && letterDone){
-
-    document.getElementById("finalContainer").style.display="block";
-
+if (albumDone && musicDone && letterDone) {
+    document.getElementById("finalContainer").style.display = "block";
 }
 
 const gifts = document.querySelectorAll(".gift");
 
-window.addEventListener("load",()=>{
+window.addEventListener("load", () => {
 
-    const flash=document.getElementById("flash");
+    const flash = document.getElementById("flash");
 
-    setTimeout(()=>{
+    setTimeout(() => {
+        flash.style.display = "none";
+    }, 1000);
 
-        flash.style.display="none";
-
-    },1000);
-
-    gifts.forEach((gift,index)=>{
-
-        setTimeout(()=>{
-
+    gifts.forEach((gift, index) => {
+        setTimeout(() => {
             gift.classList.add("show");
-
-        },500+(250*index));
-
+        }, 500 + (250 * index));
     });
 
 });
@@ -47,21 +39,23 @@ window.addEventListener("load",()=>{
 const transition = document.getElementById("transition");
 const page = document.querySelector(".page");
 
-document.querySelectorAll(".gift").forEach(gift=>{
+document.querySelectorAll(".gift").forEach(gift => {
 
-    gift.addEventListener("click",function(e){
+    gift.addEventListener("click", function (e) {
 
         e.preventDefault();
 
-        const link=this.href;
+        const link = this.href;
 
-        page.style.opacity="0";
+        page.style.opacity = "0";
 
-        setTimeout(()=>{
+        setTimeout(() => {
+            transition.style.opacity = "1";
+        }, 150);
 
-            window.location.href=link;
-
-        },400);
+        setTimeout(() => {
+            window.location.href = link;
+        }, 550);
 
     });
 
@@ -79,4 +73,4 @@ finalBtn.onclick = function(){
 
     },400);
 
-}
+};

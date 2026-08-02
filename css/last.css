@@ -11,11 +11,8 @@ body{
 
     overflow:hidden;
 
+    background:#000;
     background:url("../assets/backgrounds/letter-page.png") center/cover no-repeat;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
 
 }
 
@@ -25,6 +22,32 @@ body{
     height:100%;
 
     position:relative;
+
+    opacity:1;
+
+    transition:.4s;
+
+}
+
+#transition{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:black;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.4s;
+
+    z-index:9999;
 
 }
 
@@ -62,31 +85,5 @@ body{
     transform:translateX(-50%) scale(1.05);
 
     background:#ff2f76;
-
-}
-
-@media (max-width:768px){
-
-    body{
-
-        background-position:center;
-
-    }
-
-    #openBtn{
-
-        width:88%;
-
-        max-width:330px;
-
-        bottom:30px;
-
-        padding:16px 20px;
-
-        font-size:19px;
-
-        border-radius:35px;
-
-    }
 
 }

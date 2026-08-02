@@ -45,6 +45,10 @@ backBtn.onclick = function(){
 
     localStorage.setItem("letterDone","true");
 
-    window.location.href = "gifts.html";
+    page.style.opacity = "0";
+
+    setTimeout(()=>{
+        window.location.href = "gifts.html";
+    },400);
 
 }

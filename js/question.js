@@ -4,6 +4,8 @@ const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 const hearts = document.getElementById("hearts");
 
+const page = document.querySelector(".page");
+
 const text = "Mai am o singură întrebare...\n\nVrei să fii iubita mea? ❤️\n(din nou 🤭)";
 
 let i = 0;
@@ -45,23 +47,31 @@ noBtn.addEventListener("mouseover",()=>{
 
 yesBtn.onclick = function(){
 
-    title.innerHTML = "❤️ Știam că răspunsul va fi DA! ❤️<br><br>Te iubesc enorm!";
-
-    buttons.style.display = "none";
-
-    setInterval(createHeart,180);
+    page.style.opacity = "0";
 
     setTimeout(()=>{
 
-        document.getElementById("overlay").style.opacity="0";
+        title.innerHTML = "❤️ Știam că răspunsul va fi DA! ❤️<br><br>Te iubesc enorm!";
 
-    },4000);
+        buttons.style.display = "none";
+
+        page.style.opacity = "1";
+
+        setInterval(createHeart,180);
+
+    },400);
 
     setTimeout(()=>{
 
-        document.getElementById("theEnd").style.opacity="1";
+        document.getElementById("overlay").style.opacity = "0";
 
-    },6000);
+    },4400);
+
+    setTimeout(()=>{
+
+        document.getElementById("theEnd").style.opacity = "1";
+
+    },6400);
 
 }
 
