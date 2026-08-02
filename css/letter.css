@@ -114,45 +114,53 @@ body{
 
     #text{
 
-        top:30%;
+        position:absolute;
+
+        top:28%;
 
         left:51.4%;
 
         transform:translateX(-50%);
 
-        width:31%;
+        width:32%;
 
-        height:42%;
+        height:56%;
 
-        font-size:clamp(11px,1.15vw,16px);
+        color:#4a3527;
+
+        font-size:clamp(10px,1vw,14px);
 
         line-height:1.45;
 
-        overflow:hidden;
-
         text-align:justify;
 
-        color:#4a3527;
+        white-space:pre-line;
+
+        overflow-y:auto;
+
+        padding-right:6px;
 
     }
 
     #backBtn{
 
+        position:absolute;
+
         left:50%;
 
-        bottom:1.5%;
+        bottom:1%;
 
         transform:translateX(-50%);
 
         width:220px;
 
-        max-width:36vw;
+        max-width:38vw;
 
-        padding:10px 16px;
+        padding:10px 18px;
 
         font-size:15px;
 
-        border-radius:25px;
+        border-radius:24px;
 
     }
 
