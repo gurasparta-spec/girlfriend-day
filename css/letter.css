@@ -108,7 +108,7 @@ body{
 @media screen and (max-width:900px) and (orientation:landscape){
 
     body{
-        background-position:center;
+        background-position:center 45;
         background-size:cover;
     }
 
