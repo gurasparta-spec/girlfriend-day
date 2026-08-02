@@ -147,7 +147,8 @@ body{
     width:100%;
     height:calc(100vh - 170px);
     max-height:68vh;
-    object-fit:cover;
+    object-fit:contain;
+    background: rgba(0,0,0,.2);
 }
 
 #compliment{
