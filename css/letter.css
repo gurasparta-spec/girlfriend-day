@@ -108,13 +108,17 @@ body{
 @media screen and (max-width:900px) and (orientation:landscape){
 
     body{
-    width:100vw;
-    min-height:100vh;
 
-    overflow-y:auto;
-    overflow-x:hidden;
+        width:100vw;
+        min-height:100vh;
 
-}
+        overflow-y:auto;
+        overflow-x:hidden;
+
+        background-position:center;
+        background-size:cover;
+
+    }
 
     #text{
 
@@ -122,13 +126,13 @@ body{
 
         top:26.5%;
 
-        left:51.4%;
+        left:51.8%;
 
         transform:translateX(-50%);
 
         width:31%;
 
-        min-height:100vh;
+        height:52%;
 
         color:#4a3527;
 
@@ -140,7 +144,7 @@ body{
 
         white-space:pre-line;
 
-        overflow-y:auto;
+        overflow:hidden;
 
         padding-right:6px;
 
@@ -152,7 +156,7 @@ body{
 
         left:50%;
 
-        bottom:2%;
+        bottom:4%;
 
         transform:translateX(-50%);
 
