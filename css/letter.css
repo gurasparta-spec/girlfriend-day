@@ -122,13 +122,13 @@ body{
 
         transform:translateX(-50%);
 
-        width:33%;
+        width:31%;
 
         height:67%;
 
         color:#4a3527;
 
-        font-size:clamp(7.5px,0.85vw,12px);
+        font-size:clamp(7px,0.8vw,11px);
 
         line-height:1.45;
 
