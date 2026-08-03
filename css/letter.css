@@ -11,16 +11,11 @@ body{
 
     overflow:hidden;
 
+    background:#000 url("../assets/backgrounds/letter-paper.png") center center/cover no-repeat;
+
     position:relative;
 
     font-family:Georgia, serif;
-
-}
-
-.background{
-
-    width:100%;
-    display:block;
 
 }
 
