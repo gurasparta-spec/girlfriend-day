@@ -11,14 +11,16 @@ body{
 
     overflow:hidden;
 
-    background:#000;
-    background:url("../assets/backgrounds/letter-paper.png") center center/cover no-repeat;
-
-    background-size: cover;
-
     position:relative;
 
     font-family:Georgia, serif;
+
+}
+
+.background{
+
+    width:100%;
+    display:block;
 
 }
 
@@ -83,41 +85,41 @@ body{
 
 body{
 
-    width:100vw;
-
     height:auto;
-    min-height:125vh;
+    min-height:120vh;
 
     overflow-x:hidden;
     overflow-y:auto;
-
-    background-position:center;
-    background-size:cover;
 
 }
 
 .page{
 
-    position:relative;
+    width:100%;
+    min-height:120vh;
+
+}
+
+.background{
 
     width:100%;
-    min-height:125vh;
+    display:block;
 
 }
 
 #backBtn{
 
-    position:absolute;
+    display:block;
 
-    left:50%;
+    position:static;
 
-    bottom:4%;
-
-    transform:translateX(-50%);
+    transform:none;
 
     width:230px;
 
     max-width:40vw;
+
+    margin:30px auto 35px;
 
     padding:12px 20px;
 
