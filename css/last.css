@@ -90,26 +90,48 @@ body{
 
 @media screen and (max-width:900px) and (orientation:landscape){
 
-    #openBtn{
+body{
 
-        position:absolute;
+    height:auto;
+    min-height:120vh;
 
-        left:50%;
+    overflow-x:hidden;
+    overflow-y:auto;
 
-        bottom:3%;
+    background-position:center;
+    background-size:cover;
 
-        transform:translateX(-50%);
+}
 
-        width:280px;
+.page{
 
-        max-width:45vw;
+    width:100%;
+    min-height:120vh;
 
-        padding:14px 20px;
+    position:relative;
 
-        font-size:17px;
+}
 
-        border-radius:30px;
+#openBtn{
 
-    }
+    position:absolute;
+
+    left:50%;
+
+    bottom:5%;
+
+    transform:translateX(-50%);
+
+    width:280px;
+
+    max-width:45vw;
+
+    padding:14px 20px;
+
+    font-size:17px;
+
+    border-radius:30px;
+
+}
 
 }
