@@ -442,7 +442,7 @@ body{
 
     left:50%;
 
-    bottom:25px;
+    bottom:-15px;
 
     transform:translateX(-50%);
 
