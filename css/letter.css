@@ -22,32 +22,6 @@ body{
 
 }
 
-#text{
-
-    position:absolute;
-
-    top:29.3%;
-
-    left:51.5%;
-
-    transform:translateX(-50%);
-
-    width:36%;
-
-    height:50%;
-
-    color:#4a3527;
-
-    font-size:19px;
-
-    line-height:1.45;
-
-    white-space:pre-line;
-
-    text-align:justify;
-
-}
-
 #backBtn{
 
     position:absolute;
@@ -107,69 +81,50 @@ body{
 
 @media screen and (max-width:900px) and (orientation:landscape){
 
-    body{
+body{
 
-        width:100vw;
-        min-height:108vh;
+    width:100vw;
 
-        overflow-y:auto;
-        overflow-x:hidden;
+    height:auto;
+    min-height:120vh;
 
-        background-position:center;
-        background-size:cover;
+    overflow-x:hidden;
+    overflow-y:auto;
 
-    }
+    background-position:center;
+    background-size:cover;
 
-    #text{
+}
 
-        position:absolute;
+.page{
 
-        top:26.5%;
+    position:relative;
 
-        left:51.8%;
+    width:100%;
+    min-height:120vh;
 
-        transform:translateX(-50%);
+}
 
-        width:31%;
+#backBtn{
 
-        height:52%;
+    position:absolute;
 
-        color:#4a3527;
+    left:50%;
 
-        font-size:clamp(7px,0.8vw,11px);
+    bottom:4%;
 
-        line-height:1.45;
+    transform:translateX(-50%);
 
-        text-align:justify;
+    width:230px;
 
-        white-space:pre-line;
+    max-width:40vw;
 
-        overflow:hidden;
+    padding:12px 20px;
 
-        padding-right:6px;
+    font-size:16px;
 
-    }
+    border-radius:26px;
 
-    #backBtn{
-
-        position:absolute;
-
-        left:50%;
-
-        bottom:6%;
-
-        transform:translateX(-50%);
-
-        width:220px;
-
-        max-width:38vw;
-
-        padding:10px 18px;
-
-        font-size:15px;
-
-        border-radius:24px;
-
-    }
+}
 
 }
