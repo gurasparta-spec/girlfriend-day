@@ -348,16 +348,38 @@ transform:translate(-50%,0);
 
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape){
+@media screen and (max-width:900px) and (orientation:landscape){
 
 body{
-    overflow:hidden;
+
+    height:auto;
+    min-height:120vh;
+
+    overflow-x:hidden;
+    overflow-y:auto;
+
+}
+
+.page{
+
+    position:relative;
+
+    width:100vw;
+    min-height:120vh;
+
 }
 
 .background{
-    width:100vw;
-    height:100vh;
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:120vh;
+
     object-fit:cover;
+
 }
 
 .album,
@@ -367,29 +389,39 @@ body{
     width:29vw;
     height:56vh;
 
-    top:21vh;
+    top:23vh;
 
     border-radius:26px;
+
 }
 
 .album{
+
     left:2vw;
+
 }
 
 .music{
+
     left:35.5vw;
+
 }
 
 .letter{
+
     right:2vw;
+
 }
 
 .album img,
 .music img,
 .letter img{
+
     width:100%;
     height:100%;
+
     object-fit:cover;
+
 }
 
 .check{
@@ -401,6 +433,7 @@ body{
 
     top:10px;
     right:10px;
+
 }
 
 #finalContainer{
@@ -409,9 +442,10 @@ body{
 
     left:50%;
 
-    bottom:12px;
+    bottom:25px;
 
     transform:translateX(-50%);
+
 }
 
 #finalContainer h2{
@@ -419,6 +453,7 @@ body{
     font-size:28px;
 
     margin-bottom:14px;
+
 }
 
 #finalBtn{
@@ -426,6 +461,7 @@ body{
     padding:16px 36px;
 
     font-size:20px;
+
 }
 
 }
