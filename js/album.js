@@ -31,7 +31,7 @@ const compliments = [
 "Ești locul în care mă simt fericit 🏡",
 "Îmi place copilul din tine 🎈",
 "Mă faci cel mai mândru iubit din lume ❤️",
-"Mai am încă două surprize pentru tine ❤️❤️❤️"
+"Mai am câteva surprize pentru tine ❤️❤️❤️"
 ];
 
 let index = 0;
